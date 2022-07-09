@@ -1,0 +1,400 @@
+/* Colors:
+celeste claro: C5DCD9,
+azul: 0A4967,001B3D, 
+
+maíz: DBB236, D08A01, 
+rosa: D89898, E99076, 
+bordó: 610B1A, 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* --------------------------------- FONTS -------------------------------------------- */
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    display: none;
+}
+
+.subtitle {
+    display: none;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+/* -------------------------------- HEADER ----------------------------------------- */
+
+.boxOne {
+    background-color: rgb(200, 200, 200);
+    margin: 0;
+    height: 1rem;
+}
+
+.boxLogo {
+    background-color: rgb(255, 245, 233);
+}
+
+.logo {
+    position: left;
+    width: 20%;
+    height: auto;
+    margin-left: 5rem;
+}
+
+/* --------------------------------------- NAVBAR -------------------------------- */
+
+.navbar {
+    background-color: #ffb2bf;
+}
+
+.navbar__lista {
+    height: 5rem;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__lista--item {
+    display: inline;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.navbar__lista--item a {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.active {
+    background-color: #e47a8b;
+}
+
+.navbar__lista--item:hover {
+    background-color: #ff9eae;
+}
+
+
+/* ------------------------------------ MAIN --------------------------------- */
+
+.mainText {
+    margin: 5rem;
+    padding-top: 2rem;
+
+}
+
+.subtituloMain {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+
+}
+
+
+/* ------------------------------- GALLERÍA DE FOTOS ---------------------------------- */
+
+.gallery__imgUno {
+    width: 100%;
+}
+
+
+/* ---------------------------------- ÚLTIMOS LANZAMIENTOS ---------------------------------- */
+
+.new {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+
+.book__new {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    display: inline-block;
+}
+
+.book__new:hover {
+    border: 0.1rem solid #262626;
+
+}
+
+/* ------------------------------------ GRID -------------------------------------------- */
+
+#grilla {
+    display: grid;
+    grid-area:
+        "avatar avatar publicidad"
+        "avatar avatar publicidad"
+        "avatar avatar avatar";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.avatar {
+    grid-area: avatar;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.publicidad {
+    grid-area: publicidad;
+}
+
+/* ---------------------------------------- CATALOGO ---------------------------------- */
+.catalogo {
+    display: grid;
+    grid-template-areas:
+        "novedades novedades"
+        "ficcion noFiccion"
+        "novelaGrafica indie"
+        "publicidad publicidad";
+    grid-column-gap: 0.4rem;
+    grid-row-gap: 0.3rem;
+}
+
+.catalogo__novedades {
+    background-color: rgb(226, 255, 243);
+    padding: 5rem;
+    grid-area: novedades;
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.catalogo__ficcion {
+    grid-area: ficcion;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.catalogo__ficcion img{
+    width: 100%;
+}
+
+.catalogo__noFiccion {
+    grid-area: noFiccion;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.catalogo__noFiccion img{
+    width: 100%;
+}
+
+
+.catalogo__indie{
+    justify-self: stretch;
+}
+
+.catalogo__indie img{
+    width: 100%;
+}
+
+.catalogo__novelaGrafica {
+    justify-self: stretch;
+}
+
+.catalogo__novelaGrafica img{
+    width: 100%;
+}
+
+
+
+
+.catalogo__publicidad {
+    grid-area: publicidad;
+    justify-self: stretch;
+}
+
+/* -------------------------------------- FORMULARIO --------------------------------------- */
+
+.form {
+    display: flex;
+}
+
+.form__columna--izquierda {
+    width: 20%;
+    text-align: left;
+    margin: 2rem;
+}
+
+.form__columna--derecha {
+    width: 50%;
+    margin: 2rem;
+}
+
+form legend {
+    font-size: 2rem;
+}
+
+form .textForm {
+    font-family: 1.5rem;
+}
+
+form placeholder {
+    font-family: 1.5rem;
+}
+
+/* ---------------------------------- LIBRO ---------------------------------- */
+
+.libro {
+    margin: 5rem;
+    padding-top: 2rem;
+    display: flex;
+}
+
+.libro__info {
+    position: left;
+    margin: 2rem;
+}
+
+.libro__sinopsis {
+    position: right;
+    margin: 2rem;
+}
+
+/* --------------------------------- NOSOTROS ------------------------------------ */
+.about {
+    display: grid;
+    grid-template-areas:
+        "nosotros nosotros nosotros avatares"
+        "nosotros nosotros nosotros avatares"
+        "redes redes redes avatares";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+
+.nosotros {
+    grid-area: nosotros;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.avatares {
+    grid-area: avatares;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #e47a8b;
+
+}
+
+.avatares img {
+    width: 70%;
+    border-radius: 50%;
+    border: 0.5rem;
+    border-style: dashed;
+    border-color: #bc5768;
+    margin: 2rem;
+}
+
+.nuestrasRedes {
+    grid-area: redes;
+    margin-left: 5rem;
+    align-self: end;
+    justify-self: center;
+}
+
+
+/* ---------------------------------- FOOTER ---------------------------------- */
+
+
+.footer {
+    background-color: rgb(200, 200, 200);
+    display: grid;
+    grid-template-areas:
+        "redes redes redes"
+        "links editorial editorial"
+        "info editorial editorial"
+        "copyright copyright copyright";
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.footer__redes {
+    grid-area: redes;
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.footer__redes--img {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.footer__links {
+    grid-area: links;
+    padding-left: 2rem;
+}
+
+.footer__links li {
+    list-style: none;
+    font-size: 0.9rem;
+    color: rgb(47, 47, 47);
+}
+
+.footer__links a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.footer__links a:hover {
+    color: rgb(255, 40, 205);
+}
+
+.footer__editorial {
+    grid-area: editorial;
+}
+
+.footer__info {
+    list-style-type: info;
+    padding-left: 2rem;
+}
+
+.footer__copyright {
+    background-color: rgb(20, 18, 53);
+    text-align: center;
+    height: 1.8rem;
+    grid-column: span 3;
+}
+
+.footer__copyright p {
+    color: white;
+
+}
+
+.footer__subtitulo {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
