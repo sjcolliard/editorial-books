@@ -138,21 +138,96 @@ p {
 .book__card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-
 }
 
 .book__card:hover {
     border: 0.1rem solid #262626;
     text-decoration-line: none;
+    transform: scale(1.1, 1.1);
 
 }
 
-a{
-    color:#262626;
+a {
+    color: #262626;
     text-decoration-line: none;
 }
 
 /* ------------------------------------ GRID -------------------------------------------- */
+
+.catalogo__background {
+    background-color: background-color: rgb(226, 255, 243);
+}
+
+.catalogo__novedades {
+    background-color: rgb(226, 255, 243);
+    padding: 5rem;
+    grid-area: novedades;
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.catalogo__generos{
+    display: grid;
+    grid-template-areas:
+        "novedades novedades"
+        "ficcion noFiccion"
+        "novelaGrafica indie"
+        "publicidad publicidad";
+    grid-column-gap: 0.4rem;
+    grid-row-gap: 0.3rem;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.catalogo__generos--ficcion {
+    grid-area: ficcion;
+    width: fit-content;
+}
+
+.catalogo__generos--ficcion:hover {
+    border: 0.1rem solid #262626;
+    text-decoration-line: none;
+    transform: scale(1.1, 1.1);
+}
+
+.catalogo__generos--noFiccion {
+    grid-area: noFiccion;
+    width: fit-content;
+}
+
+.catalogo__generos--noFiccion:hover {
+    border: 0.1rem solid #262626;
+    text-decoration-line: none;
+    transform: scale(1.1, 1.1);
+}
+
+.catalogo__generos--indie {
+    justify-self: stretch;
+    width: fit-content;
+}
+
+.catalogo__generos--indie:hover {
+    border: 0.1rem solid #262626;
+    text-decoration-line: none;
+    transform: scale(1.1, 1.1);
+}
+
+.catalogo__generos--novelaGrafica {
+    justify-self: stretch;
+    width: fit-content;
+}
+
+.catalogo__generos--novelaGrafica:hover {
+    border: 0.1rem solid #262626;
+    text-decoration-line: none;
+    transform: scale(1.1, 1.1);
+}
+
+
+
+/* ---------------------------- */ 
 
 #grilla {
     display: grid;
@@ -174,67 +249,6 @@ a{
     grid-area: publicidad;
 }
 
-/* ---------------------------------------- CATALOGO ---------------------------------- */
-.catalogo {
-    display: grid;
-    grid-template-areas:
-        "novedades novedades"
-        "ficcion noFiccion"
-        "novelaGrafica indie"
-        "publicidad publicidad";
-    grid-column-gap: 0.4rem;
-    grid-row-gap: 0.3rem;
-}
-
-.catalogo__novedades {
-    background-color: rgb(226, 255, 243);
-    padding: 5rem;
-    grid-area: novedades;
-    display: flex;
-    justify-content: center;
-    column-gap: 3rem;
-}
-
-.catalogo__ficcion {
-    grid-area: ficcion;
-    justify-self: stretch;
-    align-self: stretch;
-}
-
-.catalogo__ficcion img {
-    width: 100%;
-}
-
-.catalogo__noFiccion {
-    grid-area: noFiccion;
-    justify-self: stretch;
-    align-self: stretch;
-}
-
-.catalogo__noFiccion img {
-    width: 100%;
-}
-
-.catalogo__indie {
-    justify-self: stretch;
-}
-
-.catalogo__indie img {
-    width: 100%;
-}
-
-.catalogo__novelaGrafica {
-    justify-self: stretch;
-}
-
-.catalogo__novelaGrafica img {
-    width: 100%;
-}
-
-.catalogo__publicidad {
-    grid-area: publicidad;
-    justify-self: stretch;
-}
 
 /* -------------------------------------- FORMULARIO --------------------------------------- */
 
@@ -271,7 +285,7 @@ a{
     margin: 2rem;
 }
 
-/* formulario */ 
+/* formulario */
 
 .fieldset {
     background-color: aliceblue;
