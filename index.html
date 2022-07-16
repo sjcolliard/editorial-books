@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editorial</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,86 +19,158 @@
 </head>
 
 <body>
-    <header class="header">
+
+    <!-- ------------------------------ HEADER ------------------------- -->
+    <header class="background__header">
         <div class="boxOne">
             <h1 class="siteTitle">Editorial Books</h1>
             <p class="subtitle">Abrí la puerta a nuevos mundos</p>
         </div>
+        <section class="header">
+            <div class="header__logo">
+                <a href="./index.html"><img src="./img/logo.png" alt="Books" class="logo"></a>
+            </div>
 
-        <section class="boxLogo">
-            <img src="./img/logo.png" alt="Books" class="logo">
+            <!-- ------------- Acá va una barra de búsqueda y un botón al carrito de compras --------------- -->
+            <div class="header__busqueda">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success me-2" type="submit"> <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+                            </svg> </button>
+                        <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg></button>
+                    </form>
+                </div>
+            </div>
         </section>
 
-        <!-- ------------- Acá va una barra de búsqueda y un botón al carrito de compras --------------- -->
-        <section class="buscar">
-        </section>
+        <!-- ------------------------------ NavBar -------------------------------------------- -->
 
-        <!-- -------------------------------------- NAVBAR ---------------------------------------------- -->
-        <section>
-            <nav class="navbar">
-                <ul class="navbar__lista">
-                    <li class="navbar__lista--item active"><a href="./index.html">Inicio</a></li>
-                    <li class="navbar__lista--item"><a href="./pages/catalogo.html">Catálogo</a></li>
-                    <li class="navbar__lista--item"><a href="./pages/colecciones.html">Colecciones</a></li>
-                    <li class="navbar__lista--item"><a href="./pages/autores.html">Autores</a></li>
-                    <li class="navbar__lista--item"><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" href="./pages/catalogo.html">Catálogo</a>
+                        <a class="nav-link" href="./pages/colecciones.html">Colecciones</a>
+                        <a class="nav-link" href="./pages/autores.html">Autores</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- ----------------------------------------- GALERÍA DE FOTOS ------------------------------------ -->
     <main class="gallery">
-        <!--Acá iría una imagen / publicidad de algún libro o colección de libros-->
-        <img src="./img/rainbow.png" alt="imagen principal" class="gallery__imgUno">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <!-- Primera imagen del carrusel-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/rainbow.png" class="d-block w-100" alt="imagen principal">
+                    <!--<div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>-->
+                </div>
+                <!-- Segunda imagen del carrusel-->
+                <div class="carousel-item">
+                    <img src="./img/horizontal-rainbow.png" class="d-block w-100" alt="imagen principal">
+                    <!--<div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>-->
+                </div>
+                <!-- Tercera imagen del carrusel-->
+                <div class="carousel-item">
+                    <img src="./img/books.png" class="d-block w-100" alt="imagen principal">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>-->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
 
     <!-- ---------------------------------------- ÚLTIMOS LANZAMIENTOS ------------------------------- -->
+    <h2 class="subtituloMain">Últimos lanzamientos</h2>
     <section class="new">
-        <h2 class="subtituloMain">Últimos lanzamientos</h2>
+
 
         <div class="book">
             <!-- ------------------------ The fault in our stars ----------------------------- -->
-            <div class="book__new">
-                <a href="pages/libro.html">
-                    <img src="./img/tapa01.jpg" alt="Tapa del libro X">
-                    <figcaption>
-                        <p><strong>The fault in our stars</strong></p>
-                        <p>John Green</p>
-                    </figcaption>
-                </a>
+            <a href="./pages/libro.html">
+            <div class="book__card card" style="width: 18rem;">
+                <img src="./img/tapa01.jpg" class="card-img-top" alt="Tapa del libro The fault in our Stars">
+                <div class="card-body">
+                    <p class="card-text"><strong>The fault in our stars</strong></p>
+                    <p>John Green</p>
+                </div>
             </div>
+            </a>
 
-
-            <div class="book__new">
-                <a href="pages/libro.html">
-                    <img src="./img/tapa02.png" alt="Tapa del libro X">
-                    <figcaption class="book__new--info">
-                        <p><strong>Heartstopper</strong></p>
-                        <p>Alice Oseman</p>
-                    </figcaption>
-                </a>
+            <!-- ------------------------ Heartstopper ----------------------------- -->
+            <a href="./pages/libro.html">
+            <div class="book__card card" style="width: 18rem;">
+                <img src="./img/tapa02.png" class="card-img-top" alt="Tapa del libro Heartstopper, Volumen 2">
+                <div class="card-body">
+                    <p class="card-text"><strong>Heartstopper - Volumen 2</strong></p>
+                    <p>Alice Oseman</p>
+                </div>
             </div>
+            </a>
 
-            <div class="book__new">
-                <a href="pages/libro.html">
-                    <img src="./img/tapa03.png" alt="Tapa del libro X">
-                    <figcaption>
-                        <p><strong>Red, white & royal blue</strong></p>
+
+            <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
+            <a href="./pages/libro.html">
+                <div class="book__card  card" style="width: 18rem;">
+                    <img src="./img/tapa03.png" class="card-img-top" alt="Tapa del libro Red, White & Royal Blue">
+                    <div class="card-body">
+                        <p class="card-text"><strong>Red, white & royal blue</strong></p>
                         <p>Casey McQuiston</p>
-                    </figcaption>
-                </a>
-            </div>
-
-            <a href="pages/libro.html">
-                <div class="book__new">
-                    <img src="./img/tapa-01.png" alt="Tapa del libro X">
-                    <figcaption>
-                        <p><strong>Título del libro</strong></p>
-                        <p>Nombre del autor</p>
-                    </figcaption>
+                    </div>
                 </div>
             </a>
+
+            <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
+            <a href="./pages/libro.html">
+                <div class="book__card card" style="width: 18rem;">
+                    <img src="./img/tapa03.png" class="card-img-top" alt="Tapa del libro Red, White & Royal Blue">
+                    <div class="card-body">
+                        <p class="card-text"><strong>Red, white & royal blue</strong></p>
+                        <p>Casey McQuiston</p>
+                    </div>
+                </div>
+            </a>
+
     </section>
 
 
@@ -133,6 +208,10 @@
             <p>Desarrollado por Sabrina Colliard<sup>TM</sup></p>
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

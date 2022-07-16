@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Mi CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,32 +20,42 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="background__header">
         <div class="boxOne">
             <h1 class="siteTitle">Editorial Books</h1>
             <p class="subtitle">Abrí la puerta a nuevos mundos</p>
         </div>
+        <section class="header">
+            <div class="header__logo">
+                <a href="../index.html"><img src="../img/logo.png" alt="Books" class="logo"></a>
+            </div>
 
-        <section class="boxLogo">
-            <a href="../index.html"><img src="../img/logo.png" alt="Books" class="logo"></a>
+            <!-- ------------- Acá va una barra de búsqueda y un botón al carrito de compras --------------- -->
+            <div class="header__busqueda">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </section>
 
-        <!-- ------------- Acá va una barra de búsqueda y un botón al carrito de compras --------------- -->
-        <section class="buscar">
-        </section>
+        <!-- ------------------------------ NavBar -------------------------------------------- -->
 
-        <!-- -------------------------------------- NAVBAR ---------------------------------------------- -->
-        <section>
-            <nav class="navbar">
-                <ul class="navbar__lista">
-                    <li class="navbar__lista--item"><a href="../index.html">Inicio</a></li>
-                    <li class="navbar__lista--item active"><a href="../pages/catalogo.html">Catálogo</a></li>
-                    <li class="navbar__lista--item"><a href="../pages/colecciones.html">Colecciones</a></li>
-                    <li class="navbar__lista--item"><a href="../pages/autores.html">Autores</a></li>
-                    <li class="navbar__lista--item"><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="../pages/catalogo.html">Catálogo</a>
+                        <a class="nav-link" href="../pages/colecciones.html">Colecciones</a>
+                        <a class="nav-link" href="autores.html">Autores</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- ----------------------------------------- MAIN ----------------------------------------------- -->
@@ -77,35 +91,43 @@
     </main>
 
     <!-- ---------------------------------------- FOOTER --------------------------------------------- -->
-        <footer class="footer">
-            <div class="footer__redes">
-                <h5 class="footer__subtitulo">Seguinos en redes</h5>
-                <a href="http://www.facebook.com/" target="_blank"><img src="../img/ico/facebook.ico" alt="Facebook" class="footer__redes--img"></a>
-                <a href="http://www.instagram.com/" target="_blank"><img src="../img/ico/instagram.ico" alt="Instagram" class="footer__redes--img"></a>
-                <a href="http://www.twitter.com/" target="_blank"><img src="../img/ico/twitter.ico" alt="Twitter" class="footer__redes--img"></a>
-                <a href="http://www.whatsapp.com/" target="_blank"><img src="../img/ico/whatsapp.ico" alt="WhatsApp" class="footer__redes--img"></a>
-            </div>
-            <div class="footer__links">
-                <h5>Links útiles</h5>
-                <ul class="footer__links--menu">
-                    <li><a href="../pages/nosotros.html">Quiénes somos</a></li>
-                    <li>Políticas de privacidad</li>
-                    <li>Términos y condiciones</li>
-                </ul>
-            </div>
-            <div class="footer__editorial">
-                <p>Dirección</p>
-                <p>Teléfono</p>
-                <p>E-mail de contacto</p>
-            </div>
-            <div class="footer__info">
-                <h5>Información para los autores</h5>
-            </div>
-    
-            <div class="footer__copyright">
-                <p>Desarrollado por Sabrina Colliard<sup>TM</sup></p>
-            </div>
-        </footer>
+    <footer class="footer">
+        <div class="footer__redes">
+            <h5 class="footer__subtitulo">Seguinos en redes</h5>
+            <a href="http://www.facebook.com/" target="_blank"><img src="../img/ico/facebook.ico" alt="Facebook"
+                    class="footer__redes--img"></a>
+            <a href="http://www.instagram.com/" target="_blank"><img src="../img/ico/instagram.ico" alt="Instagram"
+                    class="footer__redes--img"></a>
+            <a href="http://www.twitter.com/" target="_blank"><img src="../img/ico/twitter.ico" alt="Twitter"
+                    class="footer__redes--img"></a>
+            <a href="http://www.whatsapp.com/" target="_blank"><img src="../img/ico/whatsapp.ico" alt="WhatsApp"
+                    class="footer__redes--img"></a>
+        </div>
+        <div class="footer__links">
+            <h5>Links útiles</h5>
+            <ul class="footer__links--menu">
+                <li><a href="../pages/nosotros.html">Quiénes somos</a></li>
+                <li>Políticas de privacidad</li>
+                <li>Términos y condiciones</li>
+            </ul>
+        </div>
+        <div class="footer__editorial">
+            <p>Dirección</p>
+            <p>Teléfono</p>
+            <p>E-mail de contacto</p>
+        </div>
+        <div class="footer__info">
+            <h5>Información para los autores</h5>
+        </div>
+
+        <div class="footer__copyright">
+            <p>Desarrollado por Sabrina Colliard<sup>TM</sup></p>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 </body>
 
