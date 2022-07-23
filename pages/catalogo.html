@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
+    <!-- -- favicon -- -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- Mi CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,157 +24,200 @@
 </head>
 
 <body>
-    <header class="background__header">
-        <div class="boxOne">
-            <h1 class="siteTitle">Editorial Books</h1>
-            <p class="subtitle">Abrí la puerta a nuevos mundos</p>
-        </div>
-        <section class="header">
-            <div class="header__logo">
-                <a href="../index.html"><img src="../img/logo.png" alt="Books" class="logo"></a>
+    <header class="header">
+        <div class="container-flex d-flex flex-wrap justify-content-between align-items-end mx-5 mb-4">
+            <!-- ------------------- logo --------------------- -->
+            <div class="header__logo mt-4">
+                <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
             </div>
 
-            <!-- ------------- Acá va una barra de búsqueda y un botón al carrito de compras --------------- -->
-            <div class="header__busqueda">
-                <div class="container-fluid">
+            <!-- ------------------------- busqueda y carrito -------------------- -->
+            <nav class="navbar">
+                <div class="container">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        <button class="btn navbar__btn me-2" type="submit"><i
+                                class="bi bi-search-heart-fill"></i></button>
+
+                        <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
+
                     </form>
                 </div>
-            </div>
-        </section>
+        </div>
 
-        <!-- ------------------------------ NavBar -------------------------------------------- -->
-
-        <nav class="navbar navbar-expand-lg">
+        <!-- ---------------------- navbar ------------------------------ -->
+        <nav class="navbar navbar-expand-lg header__navbar">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                        <a class="nav-link active" aria-current="page" href="../pages/catalogo.html">Catálogo</a>
-                        <a class="nav-link" href="../pages/colecciones.html">Colecciones</a>
-                        <a class="nav-link" href="autores.html">Autores</a>
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                    </div>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item header__navbar--items px-3">
+                            <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item header__navbar--items px-3">
+                            <a class="nav-link text-white active" href="../pages/catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item header__navbar--items px-3">
+                            <a class="nav-link text-white" href="../pages/colecciones.html">Colecciones</a>
+                        </li>
+                        <li class="nav-item header__navbar--items px-3">
+                            <a class="nav-link text-white" href="../pages/autores.html">Autores</a>
+                        </li>
+                        <li class="nav-item header__navbar--items px-3">
+                            <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <main>
+        <div class="container mt-5 mb-2">
+            <div class="d-flex justify-content-center">
+                <h2>Conocé todo nuestro catálogo</h2>
+            </div>
+        </div>
+        <!-- -- Catálogo por géneros -- -->
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col catalogo__col">
+                    <a href="#"><img src="../img/ficcion.png" alt="Libros de ficción"></a>
+                    <p>Libros de ficción</p>
+                </div>
+                <div class="col catalogo__col">
+                    <img src="../img/noFiccion.png" alt="Libros de no ficción">
+                    <p>Libros de no ficción</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col catalogo__col">
+                    <img src="../img/novelaGrafica.png" alt="Novelas gráficas">
+                    <p>Novelas gráficas</p>
+                </div>
+                <div class="col catalogo__col">
+                    <img src="../img/indie.png" alt="Libros independientes">
+                    <p>Libros indie</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <!-- ----------------------------------------- MAIN ----------------------------------------------- -->
-    <main class="catalogo__background">
-        <h2 class="subtituloMain">Nuestro catálogo</h2>
-        <section class="catalogo">
-            <div class="catalogo__novedades">
-                <!-- ------------------------ The fault in our stars ----------------------------- -->
-                <a href="../pages/libro.html">
-                    <div class="book__card card" style="width: 18rem;">
+    <!-- -------------------- libros: últimos lanzamientos ------------------ -->
+    <section class="container mt-5">
+        <div class="d-flex justify-content-center">
+            <h2>Últimos lanzamientos</h2>
+        </div>
+        <div class="container d-flex flex-wrap justify-content-center">
+            <!-- ------------------------ The fault in our stars ----------------------------- -->
+            <div class="book my-4 me-2">
+                <a href="./pages/libro.html">
+                    <div class="card shadow-lg" style="width: 18rem;">
                         <img src="../img/tapa01.jpg" class="card-img-top" alt="Tapa del libro The fault in our Stars">
                         <div class="card-body">
-                            <p class="card-text"><strong>The fault in our stars</strong></p>
+                            <p class="card-text my-0"><strong>The fault in our stars</strong></p>
                             <p>John Green</p>
                         </div>
                     </div>
                 </a>
+            </div>
 
-                <!-- ------------------------ Heartstopper ----------------------------- -->
-                <a href="../pages/libro.html">
-                    <div class="book__card card" style="width: 18rem;">
+            <!-- ------------------------ Heartstopper ----------------------------- -->
+            <div class="book my-4 mx-3">
+                <a href="./pages/libro.html">
+                    <div class="card shadow-lg" style="width: 18rem;">
                         <img src="../img/tapa02.png" class="card-img-top" alt="Tapa del libro Heartstopper, Volumen 2">
                         <div class="card-body">
-                            <p class="card-text"><strong>Heartstopper - Volumen 2</strong></p>
+                            <p class="card-text my-0"><strong>Heartstopper - Volumen 2</strong></p>
                             <p>Alice Oseman</p>
                         </div>
                     </div>
                 </a>
+            </div>
 
-
-                <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
-                <a href="../pages/libro.html">
-                    <div class="book__card  card" style="width: 18rem;">
+            <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
+            <div class="book my-4 mx-3">
+                <a href="./pages/libro.html">
+                    <div class="card shadow-lg" style="width: 18rem;">
                         <img src="../img/tapa03.png" class="card-img-top" alt="Tapa del libro Red, White & Royal Blue">
                         <div class="card-body">
-                            <p class="card-text"><strong>Red, white & royal blue</strong></p>
-                            <p>Casey McQuiston</p>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
-                <a href="../pages/libro.html">
-                    <div class="book__card card" style="width: 18rem;">
-                        <img src="../img/tapa03.png" class="card-img-top" alt="Tapa del libro Red, White & Royal Blue">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Red, white & royal blue</strong></p>
+                            <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
                             <p>Casey McQuiston</p>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <!-- Catálogo por géneros-->
-            <div class="catalogo__generos">
-                <div class="catalogo__generos--ficcion">
-                    <img src="../img/ficcion.png" alt="Libros de ficción">
-                </div>
-                <div class="catalogo__generos--noFiccion">
-                    <img src="../img/noFiccion.png" alt="Libros de no ficción">
-                </div>
-                <div class="catalogo__generos--novelaGrafica">
-                    <img src="../img/novelaGrafica.png" alt="Novelas gráficas">
-                </div>
-                <div class="catalogo__generos--indie">
-                    <img src="../img/indie.png" alt="Libros independientes">
-                </div>
-
+            <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
+            <div class="book my-4 ms-2">
+                <a href="./pages/libro.html">
+                    <div class="card shadow-lg" style="width: 18rem;">
+                        <img src="../img/tapa03.png" class="card-img-top" alt="Tapa del libro Red, White & Royal Blue">
+                        <div class="card-body">
+                            <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
+                            <p>Casey McQuiston</p>
+                        </div>
+                    </div>
+                </a>
             </div>
+        </div>
+    </section>
 
-
-
-        </section>
-
-    </main>
-
-    <!-- ---------------------------------------- FOOTER --------------------------------------------- -->
+    <!-- ------------ footer ------------------ -->
     <footer class="footer">
-        <div class="footer__redes">
-            <h5 class="footer__subtitulo">Seguinos en redes</h5>
-            <a href="http://www.facebook.com/" target="_blank"><img src="../img/ico/facebook.ico" alt="Facebook"
-                    class="footer__redes--img"></a>
-            <a href="http://www.instagram.com/" target="_blank"><img src="../img/ico/instagram.ico" alt="Instagram"
-                    class="footer__redes--img"></a>
-            <a href="http://www.twitter.com/" target="_blank"><img src="../img/ico/twitter.ico" alt="Twitter"
-                    class="footer__redes--img"></a>
-            <a href="http://www.whatsapp.com/" target="_blank"><img src="../img/ico/whatsapp.ico" alt="WhatsApp"
-                    class="footer__redes--img"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-nowrap flex-column align-items-center">
+                    <div class="mt-4 mb-0">
+                        <p class="h5">Seguinos en redes</p>
+                    </div>
+                    <div class="d-inline mt-0">
+                        <a href="https://www.facebook.com" target="_blank"><i class="bi icon mx-1 bi-facebook"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"></a><i
+                            class="bi icon mx-1 bi-instagram"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"></a><i
+                            class="bi icon mx-1 bi-twitter"></i></a>
+                        <a href="https://www..com" target="_blank"></a><i class="bi icon mx-1 bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex align-items-start justify-content-center">
+                <div class="col my-3">
+                    <p class="h5">Links útiles</p>
+                    <ul>
+                        <li class="footer__lista">Quiénes somos</li>
+                        <li class="footer__lista">Políticas de privacidad</li>
+                        <li class="footer__lista">Términos y condiciones</li>
+                    </ul>
+                    <p class="h5">Información para los autores</p>
+                </div>
+                <div class="col d-flex flex-row mt-3 align-items-start">
+                    <div>
+                        <img src="../img/logo-chiquito.png" alt="Logo de la Editorial">
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="footer__lista">Dirección</li>
+                            <li class="footer__lista">Teléfono</li>
+                            <li class="footer__lista">Correo electrónico</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="footer__links">
-            <h5>Links útiles</h5>
-            <ul class="footer__links--menu">
-                <li><a href="../pages/nosotros.html">Quiénes somos</a></li>
-                <li>Políticas de privacidad</li>
-                <li>Términos y condiciones</li>
-            </ul>
-        </div>
-        <div class="footer__editorial">
-            <p>Dirección</p>
-            <p>Teléfono</p>
-            <p>E-mail de contacto</p>
-        </div>
-        <div class="footer__info">
-            <h5>Información para los autores</h5>
+        <div class="footer__copyright">
+            <p class="text-white">Copyright</p>
         </div>
 
-        <div class="footer__copyright">
-            <p>Desarrollado por Sabrina Colliard<sup>TM</sup></p>
-        </div>
     </footer>
+
+
+
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

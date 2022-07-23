@@ -6,16 +6,14 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    color:rgb(26, 26, 26);
+    color: rgb(26, 26, 26);
 }
 
-/* ------------- fonts ------------- */ 
+/* ------------- fonts ------------- */
 
-.h2{
+.h2 {}
 
-}
-
-.h5{
+.h5 {
     font-size: 1rem;
     font-weight: 600;
 }
@@ -37,38 +35,38 @@ body {
 
 /* ------------- iconos ------------- */
 
-.navbar__btn{
+.navbar__btn {
     background-color: #ffb2bf;
     border-color: rgb(26, 26, 26);
     border-radius: 50%;
 }
 
-.navbar__btn:hover{
+.navbar__btn:hover {
     background-color: #af4d5e;
     border-color: rgb(26, 26, 26);
 }
 
 
-/* ------------- navbar ------------- */ 
+/* ------------- navbar ------------- */
 
 .header__navbar {
     background-color: #ffb2bf;
 }
 
-.header__navbar--items{
+.header__navbar--items {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.header__navbar--items:hover{
+.header__navbar--items:hover {
     background-color: #ff9eae;
     color: white;
 }
 
 .active {
-    background-color:#af4d5e;
+    background-color: #af4d5e;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
 }
@@ -79,20 +77,20 @@ body {
 }
 
 
-.icon{
+.icon {
     font-size: 2rem;
-    color:rgb(26, 26, 26)
+    color: rgb(26, 26, 26)
 }
 
-.icon:hover{
+.icon:hover {
     color: #af4d5e;
 }
 
-.footer__lista{
-   list-style: none;
+.footer__lista {
+    list-style: none;
 }
 
-.footer__copyright{
+.footer__copyright {
     background-color: #e47a8b;
     width: 100%;
     margin: 0;
@@ -101,14 +99,22 @@ body {
 }
 
 
-/* ------------- index: últimos lanzamientos ------------- */ 
+/* ------------- index: últimos lanzamientos ------------- */
 
-.book a{
-    color:rgb(26, 26, 26);
+.book a {
+    color: rgb(26, 26, 26);
     text-decoration-line: none;
     text-align: center;
 }
 
-.book:hover{
+.book:hover {
     transform: scale(1.05, 1.05);
+}
+
+
+/* ------------- catálogo: libros por géneros ------------- */
+
+.catalogo__col:hover {
+    color: rgb(26, 26, 26);
+    transform: scale(1.1, 1.1);
 }
