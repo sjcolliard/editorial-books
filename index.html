@@ -33,20 +33,19 @@
 
             <!-- ------------------------- busqueda y carrito -------------------- -->
             <nav class="navbar">
-                <div class="container">
+                <div class="container  d-sm-none d-md-none d-lg d-xl d-xxl">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn navbar__btn me-2" type="submit"><i
                                 class="bi bi-search-heart-fill"></i></button>
 
                         <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
-
                     </form>
                 </div>
         </div>
 
         <!-- ---------------------- navbar ------------------------------ -->
-        <nav class="navbar navbar-expand-lg header__navbar">
+        <nav class="navbar navbar-expand-lg header__navbar d-sm-none d-md-none d-lg-none d-xl d-xxl">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -66,6 +65,50 @@
                             <a class="nav-link text-white" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- -- mobile navbar (offcanvas)-->
+        <nav class="navbar position-absolute top-0 end-0 d-sm d-md d-lg-none d-xl-none d-xxl-none">
+            <div class="container-fluid justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/colecciones.html">Colecciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/autores.html">Autores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contactanos</a>
+                            </li>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn navbar__btn me-2" type="submit"><i
+                                        class="bi bi-search-heart-fill"></i></button>
+
+                                <button class="btn navbar__btn" type="submit"><i
+                                        class="bi bi-bag-heart-fill"></i></button>
+                            </form>
+                    </div>
                 </div>
             </div>
         </nav>

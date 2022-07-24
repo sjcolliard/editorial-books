@@ -118,3 +118,30 @@ body {
     color: rgb(26, 26, 26);
     transform: scale(1.1, 1.1);
 }
+
+
+
+
+
+/* ----------------------- celular ------------------------- */
+
+@include media-breakpoint-up(sm) {
+
+    /* ------------- header: logo y barra de búsqueda ------------- */
+
+    .header__logo img {
+        width: 40%;
+    }
+
+    .header__busqueda {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+    /* ----------------------- tablet ----------------------  */
