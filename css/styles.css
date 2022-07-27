@@ -1,147 +1,81 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    font-family: 'Lato', sans-serif;
-    color: rgb(26, 26, 26);
-}
-
-/* ------------- fonts ------------- */
-
-.h2 {}
+  font-family: 'Lato', sans-serif;
+  color: #1a1a1a; }
 
 .h5 {
-    font-size: 1rem;
-    font-weight: 600;
-}
+  font-size: 1rem;
+  font-weight: 600; }
 
-
-
-/* ------------- header ------------- */
+/* ------------- header (header, navbar e iconos) ------------- */
 .header {
-    background-color: rgb(248, 248, 242);
-}
-
-/* ------------- header: logo y barra de búsqueda ------------- */
-
-.header__logo img {
+  background-color: #f8f8f2; }
+  .header__logo img {
     width: 40%;
-    height: auto;
-}
-
-
-/* ------------- iconos ------------- */
-
-.navbar__btn {
-    background-color: #ffb2bf;
-    border-color: rgb(26, 26, 26);
-    border-radius: 50%;
-}
-
-.navbar__btn:hover {
-    background-color: #af4d5e;
-    border-color: rgb(26, 26, 26);
-}
-
-
-/* ------------- navbar ------------- */
-
-.header__navbar {
-    background-color: #ffb2bf;
-}
-
-.header__navbar--items {
+    height: auto; }
+  .header__navbar {
+    background-color: #ffb3bf; }
+  .header__navbar--items {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.header__navbar--items:hover {
-    background-color: #ff9eae;
-    color: white;
-}
-
-.active {
+    font-weight: 600; }
+    .header__navbar--items:hover {
+      background-color: #e47d8e;
+      color: white; }
+  .header .navbar__btn {
+    background-color: #ffb3bf;
+    border-color: #1a1a1a;
+    border-radius: 50%; }
+    .header .navbar__btn:hover {
+      background-color: #e47d8e;
+      border-color: #1a1a1a; }
+  .header .active {
     background-color: #af4d5e;
     padding-right: 0.5rem;
-    padding-left: 0.5rem;
-}
+    padding-left: 0.5rem; }
 
 /* ------------- footer ------------- */
 .footer {
-    background-color: rgb(200, 200, 200);
-}
-
-
-.icon {
+  background-color: #c8c8c8; }
+  .footer__lista {
+    list-style: none; }
+  .footer__lista a {
+    text-decoration-line: none;
+    color: black; }
+  .footer__lista a:hover {
+    color: #ff28cd; }
+  .footer .icon {
     font-size: 2rem;
-    color: rgb(26, 26, 26)
-}
-
-.icon:hover {
-    color: #af4d5e;
-}
-
-.footer__lista {
-    list-style: none;
-}
-
-.footer__copyright {
-    background-color: #e47a8b;
+    color: #1a1a1a; }
+    .footer .icon:hover {
+      color: #e47d8e; }
+  .footer__copyright {
+    background-color: #ffb3bf;
     width: 100%;
     margin: 0;
-    text-align: center;
-    font-size: 0.8rem;
-}
-
+    height: 1.8rem;
+    align-content: center;
+    grid-column: span 3; }
+    .footer__copyright p {
+      font-size: 0.8rem;
+      text-align: center; }
 
 /* ------------- index: últimos lanzamientos ------------- */
-
 .book a {
-    color: rgb(26, 26, 26);
-    text-decoration-line: none;
-    text-align: center;
-}
+  color: #1a1a1a;
+  text-decoration-line: none;
+  text-align: center; }
 
 .book:hover {
-    transform: scale(1.05, 1.05);
-}
-
+  transform: scale(1.05, 1.05); }
 
 /* ------------- catálogo: libros por géneros ------------- */
-
 .catalogo__col:hover {
-    color: rgb(26, 26, 26);
-    transform: scale(1.1, 1.1);
-}
-
-
-
-
-
-/* ----------------------- celular ------------------------- */
-
-@include media-breakpoint-up(sm) {
-
-    /* ------------- header: logo y barra de búsqueda ------------- */
-
-    .header__logo img {
-        width: 40%;
-    }
-
-    .header__busqueda {
-        display: none;
-    }
-
-
-
-
-
-
-
-
-    /* ----------------------- tablet ----------------------  */
+  color: #1a1a1a;
+  transform: scale(1.1, 1.1); }
