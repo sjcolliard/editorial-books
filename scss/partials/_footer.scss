@@ -1,0 +1,41 @@
+.footer {
+    background-color: rgb(206, 206, 206);
+
+    &__lista {
+        list-style: none;
+    }
+
+    &__lista a {
+        text-decoration-line: none;
+        color: black;
+    }
+
+    &__lista a:hover {
+        color: $accent-color;
+    }
+
+    .icon {
+        font-size: $text-base;
+        color: rgb(26, 26, 26);
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    &__copyright {
+        background-color: $color-secondary;
+        width: 100%;
+        margin: 0;
+        height: 1.8rem;
+        align-content: center;
+        grid-column: span 3;
+
+        p {
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+}
+
+

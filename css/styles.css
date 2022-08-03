@@ -1,18 +1,28 @@
 @charset "UTF-8";
+/* variables */
+/* colors */
+/* spacings */
+/* font-family */
+/* font-size */
+/* resets */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/* fonts */
 body {
-  font-family: 'Lato', sans-serif;
-  color: #1a1a1a; }
+  font-family: "Lato", sans-serif; }
 
-.h5 {
-  font-size: 1rem;
-  font-weight: 600; }
+ul {
+  list-style-type: none; }
 
-/* ------------- header (header, navbar e iconos) ------------- */
+a {
+  text-decoration: none; }
+
+/* mixins */
+/* header */
 .header {
   background-color: #f8f8f2; }
   .header__logo img {
@@ -23,7 +33,7 @@ body {
   .header__navbar--items {
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.4em;
     font-weight: 600; }
     .header__navbar--items:hover {
       background-color: #e47d8e;
@@ -40,9 +50,9 @@ body {
     padding-right: 0.5rem;
     padding-left: 0.5rem; }
 
-/* ------------- footer ------------- */
+/* footer */
 .footer {
-  background-color: #c8c8c8; }
+  background-color: #cecece; }
   .footer__lista {
     list-style: none; }
   .footer__lista a {
@@ -51,12 +61,12 @@ body {
   .footer__lista a:hover {
     color: #ff28cd; }
   .footer .icon {
-    font-size: 2rem;
+    font-size: 1.4em;
     color: #1a1a1a; }
     .footer .icon:hover {
       color: #e47d8e; }
   .footer__copyright {
-    background-color: #ffb3bf;
+    background-color: #e47d8e;
     width: 100%;
     margin: 0;
     height: 1.8rem;
@@ -66,14 +76,31 @@ body {
       font-size: 0.8rem;
       text-align: center; }
 
-/* ------------- index: últimos lanzamientos ------------- */
-.book a {
-  color: #1a1a1a;
-  text-decoration-line: none;
+/* catálogo */
+.title {
+  font-size: 2em;
   text-align: center; }
 
-.book:hover {
-  transform: scale(1.05, 1.05); }
+.subtitle {
+  font-size: 1.4em;
+  font-weight: 400; }
+
+.shelf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .shelf__book {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .shelf__book a {
+      color: #1a1a1a;
+      text-decoration-line: none;
+      text-align: center; }
+    .shelf__book:hover {
+      transform: scale(1.05, 1.05); }
 
 /* ------------- catálogo: libros por géneros ------------- */
 .catalogo__col:hover {

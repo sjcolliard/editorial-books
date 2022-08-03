@@ -1,0 +1,35 @@
+.title {
+    font-size: $text-medium;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: $text-base;
+    font-weight: 400;
+}
+
+
+.shelf {
+    @include flex(row, center, center);
+
+    &__book {
+        @include flex(row, center, center);
+        a {
+            color: rgb(26, 26, 26);
+            text-decoration-line: none;
+            text-align: center;
+        }
+
+        &:hover {
+            transform: scale(1.05, 1.05);
+        }
+    }
+}
+
+
+/* ------------- catálogo: libros por géneros ------------- */
+
+.catalogo__col:hover {
+    color: rgb(26, 26, 26);
+    transform: scale(1.1, 1.1);
+}
