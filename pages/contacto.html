@@ -25,6 +25,15 @@
 
 <body>
     <header class="header">
+
+        <!-- banner envios gratis -->
+        <div class="banner">
+            <div class="banner__text">
+                <p><i class="bi bi-truck"></i></p>
+                <p>¡Envío gratis en compras mayores a $3500!</p>
+                <p><i class="bi bi-truck"></i></p>
+            </div>
+        </div>
         <div class="container-flex d-flex flex-wrap justify-content-between align-items-end mx-5 mb-4">
             <!-- ------------------- logo --------------------- -->
             <div class="header__logo mt-4">
@@ -114,13 +123,15 @@
         </nav>
     </header>
     <!-- --------------------------------------- SECCIÓN PRINCIPAL ---------------------------------- -->
-    <main class="contacto__background">
-        <h2 class="titulo">Contactanos</h2>
+    <main>
+        <h1 class="title">Contactanos</h1>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p class="subtitulo">Queremos saber tu opinión</p>
-                    <p>En <strong>Books Editorial</strong> nos interesa saber tu opinión. Si tenés críticas, comentarios, sugerencias o sos autor y querés saber cómo hacer para publicar tu libro, ponete en contacto con nosotros!</p>
+                    <h2 class="subtitle">Queremos saber tu opinión</h2>
+                    <p>En <strong>Books Editorial</strong> nos interesa saber tu opinión. Si tenés críticas,
+                        comentarios, sugerencias o sos autor y querés saber cómo hacer para publicar tu libro, ponete en
+                        contacto con nosotros!</p>
                 </div>
 
                 <div class="col">
@@ -151,8 +162,10 @@
                                 <label for="message" class="form-label">Mensaje</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
                             Escribe aquí....
-                        </textarea>
-
+                                </textarea>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="button" class="btn button">Enviar!</button>
                             </div>
                         </fieldset>
                 </div>
@@ -185,7 +198,7 @@
                 <div class="col my-3">
                     <p class="h5">Links útiles</p>
                     <ul>
-                        <li class="footer__lista"><a href="./pages/nosotros.html">Quiénes somos</a></li>
+                        <li class="footer__lista"><a href="../pages/nosotros.html">Quiénes somos</a></li>
                         <li class="footer__lista">Políticas de privacidad</li>
                         <li class="footer__lista">Términos y condiciones</li>
                     </ul>

@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo - Editorial Books</title>
-    <meta name="keywords" content="editorial, books, libros, editorialBooks, lanzamientos, catalogo, historias, aventuras,">
+    <meta name="keywords"
+        content="editorial, books, libros, editorialBooks, lanzamientos, catalogo, historias, aventuras,">
     <meta name="description" content="Este es nuestro catálogo completo: conocelo!">
     <!-- -- favicon -- -->
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
@@ -21,6 +22,15 @@
 
 <body>
     <header class="header">
+        <!-- banner envios gratis -->
+        <div class="banner">
+            <div class="banner__text">
+                <p><i class="bi bi-truck"></i></p>
+                <p>¡Envío gratis en compras mayores a $3500!</p>
+                <p><i class="bi bi-truck"></i></p>
+            </div>
+        </div>
+
         <div class="container-flex d-flex flex-wrap justify-content-between align-items-end mx-5 mb-4">
             <!-- ------------------- logo --------------------- -->
             <div class="header__logo mt-4">
@@ -66,10 +76,13 @@
             </div>
         </nav>
     </header>
+
+    <!-- ---- main ---- -->
+
     <main>
         <div class="container mt-5 mb-2">
             <div class="d-flex justify-content-center">
-                <h2>Conocé todo nuestro catálogo</h2>
+                <h1 class="title">Conocé todo nuestro catálogo</h1>
             </div>
         </div>
         <!-- -- Catálogo por géneros -- -->
@@ -95,68 +108,71 @@
                 </div>
             </div>
         </div>
+
+        <!-- -------------------- libros: últimos lanzamientos ------------------ -->
+        <section class="container mt-5">
+            <div>
+                <h2 class="subtitle">Últimos lanzamientos</h2>
+            </div>
+            <div class="shelf">
+                <!-- ------------------------ The fault in our stars ----------------------------- -->
+                <div class="shelf__book my-4 me-2">
+                    <a href="./pages/libro.html">
+                        <div class="card shadow-lg" style="width: 18rem;">
+                            <img src="../img/tapa01.jpg" class="card-img-top"
+                                alt="Tapa del libro The fault in our Stars">
+                            <div class="card-body">
+                                <p class="card-text my-0"><strong>The fault in our stars</strong></p>
+                                <p>John Green</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ------------------------ Heartstopper ----------------------------- -->
+                <div class="shelf__book my-4 mx-3">
+                    <a href="./pages/libro.html">
+                        <div class="card shadow-lg" style="width: 18rem;">
+                            <img src="../img/tapa02.jpg" class="card-img-top"
+                                alt="Tapa del libro Heartstopper, Volumen 2">
+                            <div class="card-body">
+                                <p class="card-text my-0"><strong>Heartstopper - Volumen 2</strong></p>
+                                <p>Alice Oseman</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
+                <div class="shelf__book my-4 mx-3">
+                    <a href="./pages/libro.html">
+                        <div class="card shadow-lg" style="width: 18rem;">
+                            <img src="../img/tapa03.jpg" class="card-img-top"
+                                alt="Tapa del libro Red, White & Royal Blue">
+                            <div class="card-body">
+                                <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
+                                <p>Casey McQuiston</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
+                <div class="shelf__book my-4 ms-2">
+                    <a href="./pages/libro.html">
+                        <div class="card shadow-lg" style="width: 18rem;">
+                            <img src="../img/tapa03.jpg" class="card-img-top"
+                                alt="Tapa del libro Red, White & Royal Blue">
+                            <div class="card-body">
+                                <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
+                                <p>Casey McQuiston</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <!-- -------------------- libros: últimos lanzamientos ------------------ -->
-    <section class="container mt-5">
-        <div class="title">
-            <p>Últimos lanzamientos</p>
-        </div>
-        <div class="shelf">
-            <!-- ------------------------ The fault in our stars ----------------------------- -->
-            <div class="shelf__book my-4 me-2">
-                <a href="./pages/libro.html">
-                    <div class="card shadow-lg" style="width: 18rem;">
-                        <img src="../img/tapa01.jpg" class="card-img-top" alt="Tapa del libro The fault in our Stars">
-                        <div class="card-body">
-                            <p class="card-text my-0"><strong>The fault in our stars</strong></p>
-                            <p>John Green</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ------------------------ Heartstopper ----------------------------- -->
-            <div class="shelf__book my-4 mx-3">
-                <a href="./pages/libro.html">
-                    <div class="card shadow-lg" style="width: 18rem;">
-                        <img src="../img/tapa02.jpg" class="card-img-top" alt="Tapa del libro Heartstopper, Volumen 2">
-                        <div class="card-body">
-                            <p class="card-text my-0"><strong>Heartstopper - Volumen 2</strong></p>
-                            <p>Alice Oseman</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
-            <div class="shelf__book my-4 mx-3">
-                <a href="./pages/libro.html">
-                    <div class="card shadow-lg" style="width: 18rem;">
-                        <img src="../img/tapa03.jpg" class="card-img-top" alt="Tapa del libro Red, White & Royal Blue">
-                        <div class="card-body">
-                            <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
-                            <p>Casey McQuiston</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
-            <div class="shelf__book my-4 ms-2">
-                <a href="./pages/libro.html">
-                    <div class="card shadow-lg" style="width: 18rem;">
-                        <img src="../img/tapa03.jpg" class="card-img-top" alt="Tapa del libro Red, White & Royal Blue">
-                        <div class="card-body">
-                            <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
-                            <p>Casey McQuiston</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- ------------ footer ------------------ -->
     <footer class="footer">
         <div class="container">

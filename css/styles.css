@@ -76,6 +76,31 @@ a {
       font-size: 0.8rem;
       text-align: center; }
 
+/* páginas */
+/* home */
+.banner {
+  background-color: #141414;
+  color: #d6d6d6;
+  text-align: center;
+  text-transform: uppercase; }
+  .banner__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .banner__text p {
+      margin: 0;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; }
+
+.newsletter {
+  background-color: #141414;
+  justify-content: center;
+  padding: 2rem;
+  color: #d6d6d6;
+  text-align: center; }
+
 /* catálogo */
 .title {
   font-size: 2em;
@@ -84,6 +109,10 @@ a {
 .subtitle {
   font-size: 1.4em;
   font-weight: 400; }
+
+.button {
+  background-color: #e47d8e;
+  border-color: gray solid; }
 
 .shelf {
   display: flex;

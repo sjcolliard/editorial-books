@@ -16,7 +16,16 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header">}
+        <!-- banner envios gratis -->
+        <div class="banner">
+            <div class="banner__text">
+                <p><i class="bi bi-truck"></i></p>
+                <p>¡Envío gratis en compras mayores a $3500!</p>
+                <p><i class="bi bi-truck"></i></p>
+            </div>
+        </div>
+
         <div class="container-flex d-flex flex-wrap justify-content-between align-items-end mx-5 mb-4">
             <!-- ------------------- logo --------------------- -->
             <div class="header__logo mt-4">
@@ -32,6 +41,7 @@
                                 class="bi bi-search-heart-fill"></i></button>
 
                         <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
+
                     </form>
                 </div>
         </div>
@@ -45,62 +55,18 @@
                             <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="./catalogo.html">Catálogo</a>
+                            <a class="nav-link text-white" href="../pages/catalogo.html">Catálogo</a>
                         </li>
                         <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="./colecciones.html">Colecciones</a>
+                            <a class="nav-link text-white active" href="../pages/colecciones.html">Colecciones</a>
                         </li>
                         <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="./autores.html">Autores</a>
+                            <a class="nav-link text-white" href="../pages/autores.html">Autores</a>
                         </li>
                         <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+                            <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-
-
-        <!-- -- mobile navbar (offcanvas)-->
-        <nav class="navbar position-absolute top-0 end-0 d-sm d-md d-lg-none d-xl-none d-xxl-none">
-            <div class="container-fluid justify-content-end">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/catalogo.html">Catálogo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/colecciones.html">Colecciones</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/autores.html">Autores</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">Contactanos</a>
-                            </li>
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                                <button class="btn navbar__btn me-2" type="submit"><i
-                                        class="bi bi-search-heart-fill"></i></button>
-
-                                <button class="btn navbar__btn" type="submit"><i
-                                        class="bi bi-bag-heart-fill"></i></button>
-                            </form>
-                    </div>
                 </div>
             </div>
         </nav>
@@ -154,7 +120,7 @@
                 <div class="col my-3">
                     <p class="subtitle">Links útiles</p>
                     <ul>
-                        <li class="footer__lista"><a href="./pages/nosotros.html">Quiénes somos</a></li>
+                        <li class="footer__lista"><a href="../pages/nosotros.html">Quiénes somos</a></li>
                         <li class="footer__lista">Políticas de privacidad</li>
                         <li class="footer__lista">Términos y condiciones</li>
                     </ul>

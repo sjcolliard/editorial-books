@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editorial Books</title>
-    <meta name="keywords" content="editorial, books, libros, editorialBooks, lanzamientos, colecciones, historias, aventuras,">
-    <meta name="description" content="Elegí un libro y abrí la puerta a nuevos mundos. Tu próxima historia está en Editorial Books">
-
+    <meta name="keywords"
+        content="editorial, books, libros, editorialBooks, lanzamientos, colecciones, historias, aventuras,">
+    <meta name="description"
+        content="Elegí un libro y abrí la puerta a nuevos mundos. Tu próxima historia está en Editorial Books">
     <!-- -- favicon -- -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <!-- CSS only -->
@@ -22,6 +23,14 @@
 
 <body>
     <header class="header">
+        <!-- banner envios gratis -->
+        <div class="banner">
+            <div class="banner__text">
+                <p><i class="bi bi-truck"></i></p>
+                <p>¡Envío gratis en compras mayores a $3500!</p>
+                <p><i class="bi bi-truck"></i></p>
+            </div>
+        </div>
         <div class="container-flex d-flex flex-wrap justify-content-between align-items-end mx-5 mb-4">
             <!-- ------------------- logo --------------------- -->
             <div class="header__logo mt-4">
@@ -112,7 +121,7 @@
     </header>
     <main>
         <!-- ----------------- carrusel de imagenes ----------------------- -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -142,90 +151,105 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </section>
+
+
+        <!-- -------------------- libros: últimos lanzamientos ------------------ -->
+        <section class="container mt-5">
+            <div class="title">
+                <p>Últimos lanzamientos</p>
+            </div>
+            <div class="shelf">
+                <!-- ------------------------ The fault in our stars ----------------------------- -->
+                <div class="shelf__book my-4 me-2">
+                    <a href="./pages/libro.html">
+                        <div class="card shadow-lg" style="width: 18rem;">
+                            <img src="./img/tapa01.jpg" class="card-img-top"
+                                alt="Tapa del libro The fault in our Stars">
+                            <div class="card-body">
+                                <p class="card-text my-0"><strong>The fault in our stars</strong></p>
+                                <p>John Green</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ------------------------ Heartstopper ----------------------------- -->
+                <div class="shelf__book  my-4 mx-3">
+                    <a href="./pages/libro.html">
+                        <div class="card shadow-lg" style="width: 18rem;">
+                            <img src="./img/tapa02.jpg" class="card-img-top"
+                                alt="Tapa del libro Heartstopper, Volumen 2">
+                            <div class="card-body">
+                                <p class="card-text my-0"><strong>Heartstopper - Volumen 2</strong></p>
+                                <p>Alice Oseman</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
+                <div class="shelf__book  my-4 mx-3">
+                    <a href="./pages/libro.html">
+                        <div class="card shadow-lg" style="width: 18rem;">
+                            <img src="./img/tapa03.jpg" class="card-img-top"
+                                alt="Tapa del libro Red, White & Royal Blue">
+                            <div class="card-body">
+                                <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
+                                <p>Casey McQuiston</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
+                <div class="shelf__book  my-4 ms-2">
+                    <a href="./pages/libro.html">
+                        <div class="card shadow-lg" style="width: 18rem;">
+                            <img src="./img/tapa03.jpg" class="card-img-top"
+                                alt="Tapa del libro Red, White & Royal Blue">
+                            <div class="card-body">
+                                <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
+                                <p>Casey McQuiston</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+        </section>
+
+
+        <!-- newsletter -->
+        <section class="newsletter">
+            <div class="newsletter_text">
+                <h3><i class="bi bi-stars"></i>No te pierdas nuestras novedades<i class="bi bi-stars"></i></h3>
+                <p>Subscribite a nuestro newsletter!</p>
+                <button type="button" class="btn button">Suscribite!</button>
+            </div>
+        </section>
+
+
     </main>
-
-    <!-- -------------------- libros: últimos lanzamientos ------------------ -->
-    <section class="container mt-5">
-        <div class="title">
-            <p>Últimos lanzamientos</p>
-        </div>
-        <div class="shelf">
-            <!-- ------------------------ The fault in our stars ----------------------------- -->
-            <div class="shelf__book my-4 me-2">
-                <a href="./pages/libro.html">
-                    <div class="card shadow-lg" style="width: 18rem;">
-                        <img src="./img/tapa01.jpg" class="card-img-top" alt="Tapa del libro The fault in our Stars">
-                        <div class="card-body">
-                            <p class="card-text my-0"><strong>The fault in our stars</strong></p>
-                            <p>John Green</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ------------------------ Heartstopper ----------------------------- -->
-            <div class="shelf__book  my-4 mx-3">
-                <a href="./pages/libro.html">
-                    <div class="card shadow-lg" style="width: 18rem;">
-                        <img src="./img/tapa02.jpg" class="card-img-top" alt="Tapa del libro Heartstopper, Volumen 2">
-                        <div class="card-body">
-                            <p class="card-text my-0"><strong>Heartstopper - Volumen 2</strong></p>
-                            <p>Alice Oseman</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
-            <div class="shelf__book  my-4 mx-3">
-                <a href="./pages/libro.html">
-                    <div class="card shadow-lg" style="width: 18rem;">
-                        <img src="./img/tapa03.jpg" class="card-img-top" alt="Tapa del libro Red, White & Royal Blue">
-                        <div class="card-body">
-                            <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
-                            <p>Casey McQuiston</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
-            <div class="shelf__book  my-4 ms-2">
-                <a href="./pages/libro.html">
-                    <div class="card shadow-lg" style="width: 18rem;">
-                        <img src="./img/tapa03.jpg" class="card-img-top" alt="Tapa del libro Red, White & Royal Blue">
-                        <div class="card-body">
-                            <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
-                            <p>Casey McQuiston</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-
-        </div>
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div>
-
-        </div>
-    </section>
 
     <!-- ------------ footer ------------------ -->
     <footer class="footer">
