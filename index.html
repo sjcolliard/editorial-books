@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editorial Books</title>
+    <title>Books Editorial</title>
     <meta name="keywords"
         content="editorial, books, libros, editorialBooks, lanzamientos, colecciones, historias, aventuras,">
     <meta name="description"
@@ -31,50 +31,38 @@
                 <p><i class="bi bi-truck"></i></p>
             </div>
         </div>
-        <div class="container-flex d-flex flex-wrap justify-content-between align-items-end mx-5 mb-4">
-            <!-- ------------------- logo --------------------- -->
-            <div class="header__logo mt-4">
-                <a href="./index.html"><img src="./img/logo.png" alt="Logo"></a>
-            </div>
-
-            <!-- ------------------------- busqueda y carrito -------------------- -->
-            <nav class="navbar">
-                <div class="container">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn navbar__btn me-2" type="submit"><i
-                                class="bi bi-search-heart-fill"></i></button>
-
-                        <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
-                    </form>
-                </div>
-        </div>
-
-        <!-- ---------------------- navbar ------------------------------ -->
+        <!-- navegación -->
         <nav class="navbar navbar-expand-lg header__navbar">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <div class="container">
+                <a href="./index.html"><img src="./img/logo.png"></a>
+                <div class="">
                     <ul class="navbar-nav">
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white active" aria-current="page" href="./index.html">Inicio</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link active" href="./index.html">Inicio</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="./pages/catalogo.html">Catálogo</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./pages/catalogo.html">Catálogo</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="./pages/colecciones.html">Colecciones</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./pages/autores.html">Autores</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="./pages/autores.html">Autores</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="./pages/contacto.html">Contacto</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
+                <div class="container">
+                    <form class="d-flex justify-content-end" role="search">
+                        <button class="btn navbar__btn me-2" type="submit"><i
+                                class="bi bi-search-heart-fill"></i></button>
+                        <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
+                    </form>
+                </div>
             </div>
         </nav>
-
 
         <!-- -- mobile navbar (offcanvas)-->
         <nav class="navbar position-absolute top-0 end-0 d-sm d-md d-lg-none d-xl-none d-xxl-none">
@@ -131,16 +119,37 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
+
+                <!-- primera imagen del carrusel -->
                 <div class="carousel-item active">
-                    <img src="./img/rainbow.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/slide02.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Descubrí nuevas historias</h2>
+                        <p>Estos son los libros publicados en el último mes</p>
+                    </div>
                 </div>
+
+                <!-- segunda imagen del carrusel -->
                 <div class="carousel-item">
-                    <img src="./img/horizontal-rainbow.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/slide01.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h2>Llevá tu biblioteca a todas partes</h2>
+                        <p>Descargá nuestros libros electrónicos y leé en cualquier lugar!</p>
+                    </div>
                 </div>
+
+
+
+                <!-- tercera imagen del carrusel -->
                 <div class="carousel-item">
-                    <img src="./img/books.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/slide03.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h2>Ahora también podés escuchar tus historias favoritas</h2>
+                        <p>Descubrí nuestros audiolibros, leídos por sus propios autores</p>
+                    </div>
                 </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -160,14 +169,15 @@
                 <p>Últimos lanzamientos</p>
             </div>
             <div class="shelf">
-                <!-- ------------------------ The fault in our stars ----------------------------- -->
+
+                <!-- ------------------------ Bajo la misma estrella ----------------------------- -->
                 <div class="shelf__book my-4 me-2">
                     <a href="./pages/libro.html">
                         <div class="card shadow-lg" style="width: 18rem;">
                             <img src="./img/tapa01.jpg" class="card-img-top"
-                                alt="Tapa del libro The fault in our Stars">
+                                alt="Tapa del libro Bajo la misma estrella">
                             <div class="card-body">
-                                <p class="card-text my-0"><strong>The fault in our stars</strong></p>
+                                <p class="card-text my-0"><strong>Bajo la misma estrella</strong></p>
                                 <p>John Green</p>
                             </div>
                         </div>
@@ -188,34 +198,34 @@
                     </a>
                 </div>
 
-                <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
+                <!-- ------------------------ Esto te va a sorprender ----------------------------- -->
+                <div class="shelf__book  my-4 ms-2">
+                    <a href="./pages/libro.html">
+                        <div class="card shadow-lg" style="width: 18rem;">
+                            <img src="./img/tapa04.jpg" class="card-img-top"
+                                alt="Tapa del libro Esto te va a sorprender">
+                            <div class="card-body">
+                                <p class="card-text my-0"><strong>Esto te va a sorprender</strong></p>
+                                <p>Hank Green</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- ------------------------ Rojo, blanco y sangre azul ----------------------------- -->
                 <div class="shelf__book  my-4 mx-3">
                     <a href="./pages/libro.html">
                         <div class="card shadow-lg" style="width: 18rem;">
                             <img src="./img/tapa03.jpg" class="card-img-top"
-                                alt="Tapa del libro Red, White & Royal Blue">
+                                alt="Tapa del libro Rojo, blanco y sangre azul">
                             <div class="card-body">
-                                <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
+                                <p class="card-text my-0"><strong>Rojo, blanco y sangre azul</strong></p>
                                 <p>Casey McQuiston</p>
                             </div>
                         </div>
                     </a>
                 </div>
-
-                <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
-                <div class="shelf__book  my-4 ms-2">
-                    <a href="./pages/libro.html">
-                        <div class="card shadow-lg" style="width: 18rem;">
-                            <img src="./img/tapa03.jpg" class="card-img-top"
-                                alt="Tapa del libro Red, White & Royal Blue">
-                            <div class="card-body">
-                                <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
-                                <p>Casey McQuiston</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
 
             </div>
             <nav aria-label="Page navigation example">
@@ -257,7 +267,7 @@
             <div class="row">
                 <div class="col d-flex flex-nowrap flex-column align-items-center">
                     <div class="mt-4 mb-0">
-                        <p class="subtitle">Seguinos en redes</p>
+                        <h5>Seguinos en redes</h5>
                     </div>
                     <div class="d-inline mt-0">
                         <a href="https://www.facebook.com" target="_blank"><i class="bi icon mx-1 bi-facebook"></i></a>
@@ -272,13 +282,13 @@
 
             <div class="row d-flex align-items-start justify-content-center">
                 <div class="col my-3">
-                    <p class="subtitle">Links útiles</p>
+                    <h5>Links útiles</h5>
                     <ul>
                         <li class="footer__lista"><a href="./pages/nosotros.html">Quiénes somos</a></li>
                         <li class="footer__lista">Políticas de privacidad</li>
                         <li class="footer__lista">Términos y condiciones</li>
                     </ul>
-                    <p class="h5">Información para los autores</p>
+                    <h5>Información para los autores</h5>
                 </div>
                 <div class="col d-flex flex-row mt-3 align-items-start">
                     <div>
@@ -286,9 +296,9 @@
                     </div>
                     <div>
                         <ul>
-                            <li class="footer__lista">Dirección</li>
-                            <li class="footer__lista">Teléfono</li>
-                            <li class="footer__lista">Correo electrónico</li>
+                            <li class="footer__lista">Calle Falsa 123, Ciudad Falsa </li>
+                            <li class="footer__lista">+54 11 2457 4578</li>
+                            <li class="footer__lista">contacto@bookseditorial.com</li>
                         </ul>
                     </div>
                 </div>
@@ -296,7 +306,8 @@
 
         </div>
         <div class="footer__copyright">
-            <p class="text-white">Desarrollado por Sabrina Colliard<sup>TM</sup></p>
+            <p class="text-white">Desarrollado por Sabrina Colliard para el curso de Desarrollo Web de
+                CoderHouse</p>
         </div>
 
     </footer>

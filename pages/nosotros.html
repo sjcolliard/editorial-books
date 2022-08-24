@@ -8,6 +8,8 @@
     <title>Quiénes somos - Editorial Books</title>
     <meta name="keywords" content="editorial, books, libros, editorialBooks, quienes-somos, nosotros,">
     <meta name="description" content="Quiénes somos los integrantes que formamos parte de Editorial Books">
+    <!-- -- favicon -- -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -27,47 +29,35 @@
                 <p><i class="bi bi-truck"></i></p>
             </div>
         </div>
-        <div class="container-flex d-flex flex-wrap justify-content-between align-items-end mx-5 mb-4">
-            <!-- ------------------- logo --------------------- -->
-            <div class="header__logo mt-4">
-                <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
-            </div>
-
-            <!-- ------------------------- busqueda y carrito -------------------- -->
-            <nav class="navbar">
-                <div class="container">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn navbar__btn me-2" type="submit"><i
-                                class="bi bi-search-heart-fill"></i></button>
-
-                        <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
-
-                    </form>
-                </div>
-        </div>
-
-        <!-- ---------------------- navbar ------------------------------ -->
+        <!-- navegación -->
         <nav class="navbar navbar-expand-lg header__navbar">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <div class="container">
+                <a href="../index.html"><img src="../img/logo.png"></a>
+                <div class="">
                     <ul class="navbar-nav">
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="../pages/catalogo.html">Catálogo</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./catalogo.html">Catálogo</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white active" href="../pages/colecciones.html">Colecciones</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./autores.html">Autores</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="../pages/autores.html">Autores</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
+                </div>
+                <div class="container">
+                    <form class="d-flex justify-content-end" role="search">
+                        <button class="btn navbar__btn me-2" type="submit"><i
+                                class="bi bi-search-heart-fill"></i></button>
+                        <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -75,95 +65,100 @@
 
 
     <!-- --------------------------------------- MAIN ------------------------------------------------->
-    <main class="about">
-        <section class="nosotros">
+    <main">
+        <section class="container mt-5 mb-2 pb-2">
             <h1 class="title">Quiénes somos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, explicabo nisi minima cupiditate maiores,
-                est
-                error suscipit velit quisquam numquam officiis! Saepe molestiae nobis numquam. Dolor quo consectetur
-                atque
-                dicta?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestias saepe doloribus nemo laborum
-                quidem
-                deserunt quisquam est, debitis quam a, accusantium eius perspiciatis maxime, provident repudiandae!
-                Reprehenderit, magnam. Corporis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quasi nisi hic sint reprehenderit est
-                facere
-                libero maxime ipsam esse corporis dicta repellendus provident veniam deleniti, omnis explicabo illum
-                placeat!</p>
-        </section>
-        <section class="avatares">
-            <img src="../img/avatar04.png">
-            <img src="../img/avatar05.png">
-            <img src="../img/avatar06.png">
-        </section>
-        <section class="nuestrasRedes">
-            <p>Nuestras redes</p>
-            <a href="http://www.facebook.com/" target="_blank"><img src="../img/ico/facebook.ico" alt="Facebook"
-                    class="media"></a>
-            <a href="http://www.instagram.com/" target="_blank"><img src="../img/ico/instagram.ico" alt="Instagram"
-                    class="media"></a>
-            <a href="http://www.twitter.com/" target="_blank"><img src="../img/ico/twitter.ico" alt="Twitter"
-                    class="media"></a>
-            <a href="http://www.whatsapp.com/" target="_blank"><img src="../img/ico/whatsapp.ico" alt="WhatsApp"
-                    class="media"></a>
-        </section>
-    </main>
-
-    <!-- ---------------------------------------- FOOTER --------------------------------------------- -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex flex-nowrap flex-column align-items-center">
-                    <div class="mt-4 mb-0">
-                        <p class="subtitle">Seguinos en redes</p>
-                    </div>
-                    <div class="d-inline mt-0">
-                        <a href="https://www.facebook.com" target="_blank"><i class="bi icon mx-1 bi-facebook"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"></a><i
-                            class="bi icon mx-1 bi-instagram"></i></a>
-                        <a href="https://www.twitter.com" target="_blank"></a><i
-                            class="bi icon mx-1 bi-twitter"></i></a>
-                        <a href="https://www..com" target="_blank"></a><i class="bi icon mx-1 bi-whatsapp"></i></a>
-                    </div>
+            <div>
+                <div class="text-center">
+                    <i class="bi bi-suit-heart-fill"></i>
+                    <h2 class="subtitle">Sobre la editorial</h2>
                 </div>
-            </div>
+                <p><strong>Books Editorial</strong> es una iniciativa que surgió a principios del 2019 con el objetivo
+                    de que autores nóveles puedan publicar su primera obra. En menos de cinco años, más de treinta
+                    artistas de distintos campos confiaron en nosotros!</p>
 
-            <div class="row d-flex align-items-start justify-content-center">
-                <div class="col my-3">
-                    <p class="subtitle">Links útiles</p>
-                    <ul>
-                        <li class="footer__lista"><a href="../pages/nosotros.html">Quiénes somos</a></li>
-                        <li class="footer__lista">Políticas de privacidad</li>
-                        <li class="footer__lista">Términos y condiciones</li>
-                    </ul>
-                    <p class="h5">Información para los autores</p>
-                </div>
-                <div class="col d-flex flex-row mt-3 align-items-start">
-                    <div>
-                        <img src="../img/logo-chiquito.png" alt="Logo de la Editorial">
+                <p>Comenzamos publicando libros de ficción y no ficción, pero nuestro catálogo se fue ampliando hasta
+                    incluir obras de poesía y novelas gráficas. Ahora, nuestro próximo desafío es ofrecer audiolibros,
+                    leídos por sus propios autores, para que tengas la posibilidad de disfrutar de bellas historias en
+                    cualquier momento libre.</p>
+
+                <div>
+                    <div class="text-center">
+                        <i class="bi bi-suit-heart-fill"></i>
+                        <h2 class="subtitle">Las personas detrás de <strong>Books</strong></h2>
+                    </div>
+                    <div class="nosotros">
+                        <img src="../img/staff01.jpg" class="nosotros__imagen">
+                        <img src="../img/staff02.jpg" class="nosotros__imagen">
+                        <img src="../img/staff03.jpg" class="nosotros__imagen">
                     </div>
                     <div>
+                        <p>Somos un pequeño grupo integrado por dos editoras, encargadas también de la corrección, y una
+                            diseñadora gráfica y maquetadora. Pero estamos buscando sumar más personas a esta familia.
+                            Si pensás que tenés algo para aportar a <strong>Books</strong>, no dudes <a
+                                href="./contacto.html" class="links">en contactarnos!</a></p>
+                    </div>
+                </div>
+        </section>
+
+        </main>
+
+        <!-- ---------------------------------------- FOOTER --------------------------------------------- -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex flex-nowrap flex-column align-items-center">
+                        <div class="mt-4 mb-0">
+                            <p class="subtitle">Seguinos en redes</p>
+                        </div>
+                        <div class="d-inline mt-0">
+                            <a href="https://www.facebook.com" target="_blank"><i
+                                    class="bi icon mx-1 bi-facebook"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"></a><i
+                                class="bi icon mx-1 bi-instagram"></i></a>
+                            <a href="https://www.twitter.com" target="_blank"></a><i
+                                class="bi icon mx-1 bi-twitter"></i></a>
+                            <a href="https://www..com" target="_blank"></a><i class="bi icon mx-1 bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex align-items-start justify-content-center">
+                    <div class="col my-3">
+                        <p class="subtitle">Links útiles</p>
                         <ul>
-                            <li class="footer__lista">Dirección</li>
-                            <li class="footer__lista">Teléfono</li>
-                            <li class="footer__lista">Correo electrónico</li>
+                            <li class="footer__lista"><a href="../pages/nosotros.html">Quiénes somos</a></li>
+                            <li class="footer__lista">Políticas de privacidad</li>
+                            <li class="footer__lista">Términos y condiciones</li>
                         </ul>
+                        <p class="h5">Información para los autores</p>
+                    </div>
+                    <div class="col d-flex flex-row mt-3 align-items-start">
+                        <div>
+                            <img src="../img/logo-chiquito.png" alt="Logo de la Editorial">
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="footer__lista">Dirección</li>
+                                <li class="footer__lista">Teléfono</li>
+                                <li class="footer__lista">Correo electrónico</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
+            </div>
+            <div class="footer__copyright">
+                <p class="text-white">Desarrollado por Sabrina Colliard para el curso de Desarrollo Web de
+                    CoderHouse</p>
             </div>
 
-        </div>
-        <div class="footer__copyright">
-            <p class="text-white">Desarrollado por Sabrina Colliard<sup>TM</sup></p>
-        </div>
+        </footer>
 
-    </footer>
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

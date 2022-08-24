@@ -9,6 +9,8 @@
     <meta name="keywords" content="editorial, books, libros, editorialBooks, autores,">
     <meta name="description"
         content="Conocé a los autores que confiaron y confían en Editorial Books para hacer realidad sus libros.">
+    <!-- -- favicon -- -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -28,71 +30,130 @@
                 <p><i class="bi bi-truck"></i></p>
             </div>
         </div>
-
-        <div class="container-flex d-flex flex-wrap justify-content-between align-items-end mx-5 mb-4">
-            <!-- ------------------- logo --------------------- -->
-            <div class="header__logo mt-4">
-                <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
-            </div>
-
-            <!-- ------------------------- busqueda y carrito -------------------- -->
-            <nav class="navbar">
-                <div class="container">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn navbar__btn me-2" type="submit"><i
-                                class="bi bi-search-heart-fill"></i></button>
-
-                        <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
-
-                    </form>
-                </div>
-        </div>
-
-        <!-- ---------------------- navbar ------------------------------ -->
+        <!-- navegación -->
         <nav class="navbar navbar-expand-lg header__navbar">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <div class="container">
+                <a href="../index.html"><img src="../img/logo.png"></a>
+                <div class="">
                     <ul class="navbar-nav">
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="../pages/catalogo.html">Catálogo</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./catalogo.html">Catálogo</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="../pages/colecciones.html">Colecciones</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link active" href="./autores.html">Autores</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white active" href="../pages/autores.html">Autores</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link " href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
+                <div class="container">
+                    <form class="d-flex justify-content-end" role="search">
+                        <button class="btn navbar__btn me-2" type="submit"><i
+                                class="bi bi-search-heart-fill"></i></button>
+                        <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
+                    </form>
+                </div>
             </div>
         </nav>
+
     </header>
 
-
     <!-- --------------------------------------- MAIN ------------------------------------------------->
-    <main class="mainText">
-        <h2 class="subtituloMain">Nuestros autores</h2>
-        <section id="grilla">
-            <div class="avatar">
-                <img src="../img/avatar01.png">
-                <img src="../img/avatar02.png">
-                <img src="../img/avatar03.png">
-                <img src="../img/avatar04.png">
-                <img src="../img/avatar05.png">
-                <img src="../img/avatar06.png">
-            </div>
-            <div class="publicidad">
-                <p>Esto es una publicidad</p>
+    <main class="main">
+        <section class="container mt-5 mb-2">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1 class="title">Nuestros autores</h1>
+                <p class="subtitle">En <strong>Books</strong> estamos orgullosos de nuestros autores y queremos que vos
+                    también
+                    los
+                    conozcas! Acá te los presentamos</p>
             </div>
         </section>
 
+        <div class="container my-3">
+            <!-- Primera fila de autores -->
+            <div class="d-flex flex-row py-3">
+                <div class="cajita mx-2">
+                    <img src="../img/avatar01.jpg" alt="John Green" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">John Green</div>
+                    </div>
+                </div>
+
+                <div class="cajita mx-2">
+                    <img src="../img/avatar02.jpg" alt="Alice Oseman" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Alice Oseman</div>
+                    </div>
+                </div>
+
+                <div class="cajita mx-2">
+                    <img src="../img/avatar03.jpg" alt="Casey McQuiston" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Casey McQuiston</div>
+                    </div>
+                </div>
+
+                <div class="cajita mx-2">
+                    <img src="../img/avatar04.jpg" alt="Hank Green" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Hank Green</div>
+                    </div>
+                </div>
+
+                <div class="cajita mx-2">
+                    <img src="../img/avatar05.jpg" alt="Stephen King" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Stephen King</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex flex-row py-3">
+                <div class="cajita mx-2">
+                    <img src="../img/avatar06.jpg" alt="Kiley Reid" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Kiley Reid</div>
+                    </div>
+                </div>
+
+                <div class="cajita mx-2">
+                    <img src="../img/avatar07.jpg" alt="Rooney Sally" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Rooney Sally</div>
+                    </div>
+                </div>
+
+                <div class="cajita mx-2">
+                    <img src="../img/avatar08.jpg" alt="Taylor Jenkins Reid" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Taylor Jenkins Reid</div>
+                    </div>
+                </div>
+
+                <div class="cajita mx-2">
+                    <img src="../img/avatar09.jpg" alt="Rupi Kaur" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Rupi Kaur</div>
+                    </div>
+                </div>
+
+                <div class="cajita mx-2">
+                    <img src="../img/avatar10.jpg" alt="Markus Zusak" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Markus Zusak</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <!-- ---------------------------------------- FOOTER --------------------------------------------- -->

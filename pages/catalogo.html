@@ -30,148 +30,87 @@
                 <p><i class="bi bi-truck"></i></p>
             </div>
         </div>
-
-        <div class="container-flex d-flex flex-wrap justify-content-between align-items-end mx-5 mb-4">
-            <!-- ------------------- logo --------------------- -->
-            <div class="header__logo mt-4">
-                <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
-            </div>
-
-            <!-- ------------------------- busqueda y carrito -------------------- -->
-            <nav class="navbar">
-                <div class="container">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn navbar__btn me-2" type="submit"><i
-                                class="bi bi-search-heart-fill"></i></button>
-
-                        <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
-
-                    </form>
-                </div>
-        </div>
-
-        <!-- ---------------------- navbar ------------------------------ -->
+        <!-- navegación -->
         <nav class="navbar navbar-expand-lg header__navbar">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <div class="container">
+                <a href="../index.html"><img src="../img/logo.png"></a>
+                <div class="">
                     <ul class="navbar-nav">
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white active" href="../pages/catalogo.html">Catálogo</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link active" href="catalogo.html">Catálogo</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="../pages/colecciones.html">Colecciones</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./autores.html">Autores</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="../pages/autores.html">Autores</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item header__navbar--items px-3">
-                            <a class="nav-link text-white" href="../pages/contacto.html">Contacto</a>
+                        <li class="nav-item header__navbar--items px-2">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
+                <div class="container">
+                    <form class="d-flex justify-content-end" role="search">
+                        <button class="btn navbar__btn me-2" type="submit"><i
+                                class="bi bi-search-heart-fill"></i></button>
+                        <button class="btn navbar__btn" type="submit"><i class="bi bi-bag-heart-fill"></i></button>
+                    </form>
+                </div>
             </div>
         </nav>
+
     </header>
 
     <!-- ---- main ---- -->
 
-    <main>
-        <div class="container mt-5 mb-2">
-            <div class="d-flex justify-content-center">
+    <main class="main">
+        <section class="container mt-5 mb-2">
+            <div class="d-flex flex-column justify-content-center align-items-center">
                 <h1 class="title">Conocé todo nuestro catálogo</h1>
+                <p class="subtitle">Tu próxima historia favorita te está esperando en <strong>Books</strong>. ¡Animate a descubrirla!</p>
             </div>
-        </div>
+        </section>
+
+
         <!-- -- Catálogo por géneros -- -->
-        <div class="container d-flex justify-content-center">
-            <div class="row">
-                <div class="col catalogo__col">
-                    <a href="#"><img src="../img/ficcion.png" alt="Libros de ficción"></a>
-                    <p>Libros de ficción</p>
+        <section class="container">
+            <div class="row justify-content-center align-items-center px-0 my-3">
+                <div class="generos px-0">
+                    <img src="../img/ficcion.png" alt="Libros de ficción" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Ficción</div>
+                    </div>
                 </div>
-                <div class="col catalogo__col">
-                    <img src="../img/noFiccion.png" alt="Libros de no ficción">
-                    <p>Libros de no ficción</p>
+
+                <div class="generos px-0">
+                    <img src="../img/noFiccion.png" alt="Libros de no ficción" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">No ficción</div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col catalogo__col">
-                    <img src="../img/novelaGrafica.png" alt="Novelas gráficas">
-                    <p>Novelas gráficas</p>
-                </div>
-                <div class="col catalogo__col">
-                    <img src="../img/indie.png" alt="Libros independientes">
-                    <p>Libros indie</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- -------------------- libros: últimos lanzamientos ------------------ -->
-        <section class="container mt-5">
-            <div>
-                <h2 class="subtitle">Últimos lanzamientos</h2>
-            </div>
-            <div class="shelf">
-                <!-- ------------------------ The fault in our stars ----------------------------- -->
-                <div class="shelf__book my-4 me-2">
-                    <a href="./pages/libro.html">
-                        <div class="card shadow-lg" style="width: 18rem;">
-                            <img src="../img/tapa01.jpg" class="card-img-top"
-                                alt="Tapa del libro The fault in our Stars">
-                            <div class="card-body">
-                                <p class="card-text my-0"><strong>The fault in our stars</strong></p>
-                                <p>John Green</p>
-                            </div>
-                        </div>
-                    </a>
+            <div class="row justify-content-center align-items-center">
+                <div class="generos px-0">
+                    <img src="../img/indie.png" alt="Libros de autores independientes" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Independientes</div>
+                    </div>
                 </div>
 
-                <!-- ------------------------ Heartstopper ----------------------------- -->
-                <div class="shelf__book my-4 mx-3">
-                    <a href="./pages/libro.html">
-                        <div class="card shadow-lg" style="width: 18rem;">
-                            <img src="../img/tapa02.jpg" class="card-img-top"
-                                alt="Tapa del libro Heartstopper, Volumen 2">
-                            <div class="card-body">
-                                <p class="card-text my-0"><strong>Heartstopper - Volumen 2</strong></p>
-                                <p>Alice Oseman</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
-                <div class="shelf__book my-4 mx-3">
-                    <a href="./pages/libro.html">
-                        <div class="card shadow-lg" style="width: 18rem;">
-                            <img src="../img/tapa03.jpg" class="card-img-top"
-                                alt="Tapa del libro Red, White & Royal Blue">
-                            <div class="card-body">
-                                <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
-                                <p>Casey McQuiston</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- ------------------------ Red, White & Royal Blue ----------------------------- -->
-                <div class="shelf__book my-4 ms-2">
-                    <a href="./pages/libro.html">
-                        <div class="card shadow-lg" style="width: 18rem;">
-                            <img src="../img/tapa03.jpg" class="card-img-top"
-                                alt="Tapa del libro Red, White & Royal Blue">
-                            <div class="card-body">
-                                <p class="card-text my-0"><strong>Red, white & royal blue</strong></p>
-                                <p>Casey McQuiston</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="generos px-0">
+                    <img src="../img/novelaGrafica.png" alt="Novelas gráficas" class="imagen">
+                    <div class="overlay">
+                        <div class="texto">Novelas gráficas</div>
+                    </div>
                 </div>
             </div>
         </section>
+
     </main>
     <!-- ------------ footer ------------------ -->
     <footer class="footer">
