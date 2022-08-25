@@ -1,0 +1,20 @@
+.fondo {
+    background-color: #ffffff;
+    background-image: linear-gradient(#0e5a2275 0.8px, transparent 0.8px), linear-gradient(90deg, #0e5a227a 0.8px, transparent 0.8px), linear-gradient(#0e5a22 0.4px, transparent 0.4px), linear-gradient(90deg, #0e5a22 0.4px, #e5e5f7 0.4px);
+    background-size: 20px 20px, 20px 20px, 4px 4px, 4px 4px;
+    background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px, -0.4px -0.4px;
+}
+
+.columna {
+    padding-top: 2rem;
+}
+
+.autores {
+    display: flex;
+    @include flex(row, center, center);
+}
+
+.redondeada {
+    border-radius: 2%;
+    padding: 2rem;
+}

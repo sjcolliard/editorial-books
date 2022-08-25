@@ -1,0 +1,205 @@
+// Responsive tablets grandes 
+
+@media (max-width:1279px) {
+
+    // Generales
+    .logo {
+        width: 20%
+    }
+
+    .title {
+        padding-top: 1.5rem;
+    }
+
+    .subtitle {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+
+    // Home 
+
+    .carousel-text {
+        display: none;
+    }
+
+    // Contacto
+    .columna {
+        padding-right: 2rem;
+    }
+
+    .alt {
+        display: none;
+    }
+
+
+    // Libro
+    .libro {
+        flex-direction: column;
+
+        &__datos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-right: 0;
+            padding-left: 0;
+
+            .tapa {
+                padding-right: 2rem;
+            }
+
+            .info {
+                padding-left: 2rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+// Responsive celular y tablets chicas 
+
+@media (max-width:768px) {
+
+    .main{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    // General
+    .banner__text{
+        font-size:x-small;
+    }
+
+    .logo{
+        width: 50%;
+    }
+
+    .title{
+        padding: 0;
+        font-size: $text-medium;
+    }
+
+    .subtitulo {
+        font-size: $text-base;
+    }
+
+    p{
+        font-size: small;
+    }
+
+
+    // Home 
+
+    .carousel{
+        display: none;
+    }
+
+    .carousel-text {
+        display: none;
+    }
+
+    .shelf {
+        justify-content: center;
+        width: fit-content;
+    }
+
+    .footer{
+        &__copyright {
+            display: none;
+        }
+
+        &__columnas{
+            flex-direction: column;
+            justify-content: start;
+            padding-right: 1rem;
+    
+            .columnaDos{
+                flex-direction: column;
+            }
+        }
+
+        .columnaDos{
+            flex-direction: column;
+            padding-bottom: 1rem;
+        }
+
+        &__lista{
+            font-size: small;
+            list-style-type: none;
+        }
+
+
+    }
+
+    
+    // Libro 
+
+    .libro {
+        flex-direction: column;
+
+        &__datos {
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .parrafo {
+            display: none;
+        }
+    }
+
+
+    // Catalogo
+
+    .genre {
+        flex-direction: column;
+
+        .generos {
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    // Autores
+
+    .fila-uno {
+        flex-direction: column;
+
+        .cajita {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .fila-dos {
+        display: none;
+    }
+
+
+    // Nosotros
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    // Contacto
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    .alt {
+        display: none;
+    }
+
+}

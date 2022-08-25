@@ -19,6 +19,13 @@
 
 
 /* páginas */
-@import "./views/home";
-@import "./views/pages";
+@import "./views/index";
+@import "./views/catalogo";
+@import "./views/contacto";
+@import "./views/libro";
+@import "./views/nosotros";
+@import "./views/autores";
 
+
+/* media queries */
+@import "./views/mediaqueries";

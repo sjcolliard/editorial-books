@@ -1,0 +1,12 @@
+.nosotros{
+    display: flex;
+    justify-content: center;
+
+    &__imagen{
+        width: 30%;
+        height: auto;
+        border-radius: 50%;
+        padding: 2rem;
+    }
+
+}

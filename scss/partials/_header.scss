@@ -1,11 +1,11 @@
 .header {
-    img {
+    .logo {
         width: 50%;
         height: auto;
     }
 
     &__navbar {
-        background-color: rgb(255, 211, 211);
+        background-color: $color-primary;
         padding: 1rem;
     }
 
@@ -26,20 +26,24 @@
     }
 
     .navbar__btn {
-        background-color: $color-primary;
+        background-color: $color-secondary;
         border-color: rgb(26, 26, 26);
         border-radius: 50%;
 
         &:hover {
-            background-color: $color-secondary;
+            background-color: $color-primary;
             border-color: rgb(26, 26, 26);
         }
     }
 
     .active {
-        background-color: #af4d5e;
+        background-color: #ca6173;
         padding-right: 1rem;
         padding-left: 1rem;
+    }
+
+    &__toggler{
+        position: absolute;
     }
 
 }

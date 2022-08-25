@@ -1,0 +1,18 @@
+.fondo2{
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: radial-gradient(#ffc2e9 1.1500000000000001px, #e9e9e9 1.1500000000000001px);
+    background-size: 23px 23px;
+}
+
+.libro{
+    &__datos{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    &__sinopsis{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - Books Editorial </title>
-    <meta name="keywords"
-        content="editorial, books, libros, editorialBooks, lanzamientos, catalogo, historias, aventuras,">
-    <meta name="description" content="Este es nuestro catálogo completo: conocelo!">
+    <title>Bajo la misma estrella - Books Editorial</title>
+    <meta name="keywords" content="editorial, books, bajo la misma estrella, john green, green john, ">
+    <meta name="description"
+        content="Bajo la misma estrella, de John Green. Este y todos tus libros favoritos en Books Editorial!">
     <!-- -- favicon -- -->
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <!-- CSS only -->
@@ -28,7 +28,7 @@
                 <p><i class="bi bi-truck"></i> ¡Envío gratis en compras mayores a $3500! <i class="bi bi-truck"></i></p>
             </div>
         </div>
-        <!-- navegación responsive -->
+        <!-- navegación responsive-->
         <nav class="navbar navbar-expand-lg header__navbar">
             <div class="container-fluid  justify-content-between">
                 <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
@@ -44,7 +44,7 @@
                                 <a class="nav-link" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item header__navbar--items px-2">
-                                <a class="nav-link  active" href="./catalogo.html">Catálogo</a>
+                                <a class="nav-link" href="./catalogo.html">Catálogo</a>
                             </li>
                             <li class="nav-item header__navbar--items px-2">
                                 <a class="nav-link" href="./autores.html">Autores</a>
@@ -68,56 +68,39 @@
                 </div>
             </div>
         </nav>
-
     </header>
-
-    <!-- ---- main ---- -->
-
-    <main class="main">
-        <section class="container mt-5 mb-2">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <h1 class="title">Conocé todo nuestro catálogo</h1>
-                <p class="subtitle">Tu próxima historia favorita te está esperando en <strong>Books</strong>. ¡Animate a descubrirla!</p>
-            </div>
-        </section>
-
-
-        <!-- -- Catálogo por géneros -- -->
-        <section class="container mb-4">
-            <div class="genre d-flex justify-content-center align-items-center px-0">
-                <div class="generos px-0">
-                    <img src="../img/ficcion.png" alt="Libros de ficción" class="imagen">
-                    <div class="overlay">
-                        <div class="texto">Ficción</div>
+    <!-- ------------------------------------------ MAIN ---------------------------------------------------- -->
+    <main class="fondo2 main">
+        <!--<section class="container d-flex flex-row mt-5 mb-5  libro">-->
+        <div class="container flex-wrap mt-5 mb-5 bg-light redondeada shadow-lg">
+            <div class="libro d-flex">
+                <div class="libro__datos">
+                    <div class="tapa">
+                        <img src="../img/tapa04.jpg" alt="Tapa del libro Esto te va a sorprender">
+                    </div>
+                    <div class="info">
+                        <p class="parrafo"><strong>Hank Green</strong></p>
+                        <p class="parrafo">ISBN: 978-84-1-658888-6</p>
+                        <p class="parrafo">Páginas: 354</p>
+                        <p class="parrafo">Formato: Paperback</p>
+                        <p class="parrafo">Precio: $2.900</p>
+                        <div class="d-grid justify-content-start my-3">
+                            <button type="button" class="btn button">Comprar</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="generos px-0">
-                    <img src="../img/noFiccion.png" alt="Libros de no ficción" class="imagen">
-                    <div class="overlay">
-                        <div class="texto">No ficción</div>
-                    </div>
+                <div class="libro__sinopsis">
+                    <h1 class="title">Esto te va a sorprender</h1>
+                    <h2 class="subtitle">Sinópsis</h2>
+                    <p>La vida de April May nunca volverá a ser la misma. Volviendo a casa a las tres de la mañana, April se encontró con una escultura gigante, sobre la que colgó un vídeo. Ahora los Carls, las misteriosas estatuas que aparecen y desaparecen en el mundo entero, se han hecho virales, y April May con ellas.</p>
+                    
+                    <p>¿Será esta su oportunidad para dejar huella en el mundo? April pronto descubrirá las consecuencias que toda esta atención conlleva, y que el mundo haya depositado en ella la responsabilidad de averiguar que son los Carls y, sobre todo# que quieren de nosotros.</p>
                 </div>
-            </div>
-
-            <div class="genre d-flex justify-content-center align-items-center">
-                <div class="generos px-0">
-                    <img src="../img/indie.png" alt="Libros de autores independientes" class="imagen">
-                    <div class="overlay">
-                        <div class="texto">Independientes</div>
-                    </div>
-                </div>
-
-                <div class="generos px-0">
-                    <img src="../img/novelaGrafica.png" alt="Novelas gráficas" class="imagen">
-                    <div class="overlay">
-                        <div class="texto">Novelas gráficas</div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
     </main>
+
+
     <!-- ------------ footer ------------------ -->
     <footer class="footer">
         <div class="container">
@@ -167,7 +150,6 @@
                 CoderHouse</p>
         </div>
     </footer>
-
 
 
 
