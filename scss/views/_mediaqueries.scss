@@ -169,7 +169,7 @@
 
     // Autores
 
-    .fila-uno {
+    .filaUno {
         flex-direction: column;
 
         .cajita {
@@ -178,8 +178,12 @@
         }
     }
 
-    .fila-dos {
+    .filaDos {
         display: none;
+        
+        .cajita {
+            display:none;
+        }
     }
 
 

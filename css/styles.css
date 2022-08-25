@@ -354,13 +354,15 @@ a {
     .genre .generos {
       margin: 0;
       width: 100%; }
-  .fila-uno {
+  .filaUno {
     flex-direction: column; }
-    .fila-uno .cajita {
+    .filaUno .cajita {
       padding-top: 1rem;
       padding-bottom: 1rem; }
-  .fila-dos {
+  .filaDos {
     display: none; }
+    .filaDos .cajita {
+      display: none; }
   .nosotros {
     display: flex;
     flex-direction: column; }
