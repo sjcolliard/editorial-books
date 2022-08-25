@@ -1,8 +1,9 @@
-<h1>Página Editorial</h1>
-<p>Este es un proyecto para el curso de desarrollo web de CoderHouse.</p>
+<h1>Sitio web de Books Editorial</h1>
+<p>Este sitio web fue desarrollado en el marco del curso de Desarrollo Web de CoderHouse, usando las tecnologías:</p>
 
-<h2>Tecnologías utilizadas</h2>
 <ul>
 <li>HTML5</li>
 <li>CSS3</li>
+<li>Bootstrap</li>
+<li>Sass</li>
 </ul>
