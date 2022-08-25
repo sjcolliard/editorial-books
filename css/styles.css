@@ -116,8 +116,7 @@ a {
 .footer {
   background-color: #cecece; }
   .footer__lista {
-    list-style-type: none;
-    margin: 0; }
+    list-style-type: none; }
   .footer__lista a {
     text-decoration-line: none;
     color: black; }
@@ -348,6 +347,8 @@ a {
       align-content: center; }
     .libro .parrafo {
       display: none; }
+  .columna {
+    padding: 0; }
   .genre {
     flex-direction: column; }
     .genre .generos {
